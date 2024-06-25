@@ -1,0 +1,89 @@
+@use 'variables' as vars;
+
+@media (min-width: 1000px) {
+
+    .article {
+        width: vars.$width-desktop !important;
+        margin-block: 3rem 0;
+        border-radius: 1.5rem;
+        padding-bottom: 0.9rem;
+    }
+
+    .img-wrapper {
+        margin: 2.4rem;
+    }
+
+    .img {
+        border-radius: 0.8rem;
+    }
+
+    .container {
+        padding: 0 2.5rem !important;
+    }
+
+    .header {
+        &-title {
+            font-size: vars.$size-h1-desktop !important;
+            margin: 2.8rem 0 1.5rem 0;
+        }
+    }
+
+.preparation-time {
+    margin: 0 2.5rem !important;
+    padding: 0 !important;
+
+    &-title {
+        padding: 1.2rem 1.5rem 0.1rem 1.7rem !important;
+    }
+    
+    &-list {
+        padding: 0 1rem 1.3rem 2.1rem !important;
+    }
+}
+
+.subtitle {
+    font-size: vars.$size-h2-desktop;
+}
+
+.ingredients {
+    &-list {
+        padding: 0.6rem 0.4rem 1.6rem 0.3rem !important;
+
+        &-item {
+            padding: 0.2rem 2rem 0.3rem 2.1rem !important;
+        }
+    }
+}
+
+.instructions {
+    margin: 1.9rem 0 1.9rem 0 !important;
+
+    &-list {
+        &-item {
+            padding: 0.5rem 0 0 0.9rem !important;
+        }
+    }
+}
+
+.nutrition {
+    margin-top: 0.6rem !important;
+
+    &-description {
+        margin-bottom: 0.16rem !important;
+    }
+}
+
+.table {
+    line-height: 1.9rem !important;
+
+    &-col {
+        &-name {
+            flex-grow: 0.9 !important;
+        }
+    }
+}
+
+.footer {
+    background-color: vars.$body-bg-color !important;
+}
+}

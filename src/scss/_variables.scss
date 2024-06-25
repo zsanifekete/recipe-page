@@ -1,0 +1,51 @@
+// COLORS
+$color-white: hsl(0, 0%, 100%);
+$color-rose-white: hsl(330, 100%, 98%);
+$color-eggshell: hsl(30, 54%, 90%);
+$color-light-gray: hsl(30, 18%, 87%);
+$color-wenge-brown: hsl(30, 10%, 34%);
+$color-dark-charcoal: hsl(24, 5%, 18%);
+$color-nutmeg: hsl(14, 45%, 36%);
+$color-dark-rasberry: hsl(332, 51%, 32%);
+
+// BACKGROUND COLORS
+$body-bg-color: $color-eggshell;
+$main-bg-color: $color-white;
+$preparation-bg-color: $color-rose-white;
+
+// TEXT COLORS
+$main-color: $color-wenge-brown;
+$h1-color: $color-dark-charcoal;
+$preparation-color: $color-dark-rasberry;
+$h2-color: $color-nutmeg;
+
+$table-name-color: $color-wenge-brown;
+$table-value-color: $color-nutmeg;
+
+$footer-text-color: $color-dark-charcoal;
+$footer-link: $color-dark-rasberry;
+$footer-link-hover: $color-nutmeg;
+
+// LINE, BORDER AND MARKER COLOR
+$list-marker-color: $color-dark-rasberry;
+$line-color: $color-light-gray;
+
+// FONT-FAMILY
+$family-young-serif: "Young Serif", serif;
+$family-outfit: "Outfit", sans-serif;
+
+// FONT-SIZE
+$size-h1-mobile: 2.25rem;
+$size-h1-desktop: 2.48rem;
+$size-p: 1rem;
+$size-preparation: 1.24rem;
+$size-h2: 1.75rem;
+$size-h2-desktop: 1.85rem;
+$size-marker: 0.7em;
+$size-footer: 1rem;
+
+// WIDTH
+$width-mobile: 100%;
+$width-desktop: 58%;
+
+

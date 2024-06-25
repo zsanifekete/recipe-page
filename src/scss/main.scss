@@ -1,0 +1,191 @@
+@use 'normalize';
+@use 'variables' as vars;
+@use 'media';
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: vars.$body-bg-color;
+    font-family: vars.$family-outfit;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* for Internet Explorer and Edge */
+    scrollbar-width: none; /* for Firefox */ 
+
+    &::webkit-scrollbar {
+        display: none;
+    }
+}
+
+.article {
+    background-color: vars.$main-bg-color;
+    color: vars.$main-color;
+    width: vars.$width-mobile;
+    width: 100%;
+}
+
+.container {
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.img {
+    width: 100%;
+}
+
+.header {
+    margin: 2.5rem 0;
+
+    &-title {
+        font-family: vars.$family-young-serif;
+        color: vars.$h1-color;
+        font-size: vars.$size-h1-mobile;
+        word-spacing: 1px;
+        line-height: 2.3rem;
+    }
+
+    &-description {
+        font-size: vars.$size-p;
+        line-height: 1.5rem;
+        margin: 1.4rem 0;
+    }
+}
+
+.preparation-time {
+    background-color: vars.$preparation-bg-color;
+    padding: 0;
+    margin: 0 2rem;
+    width: auto;
+
+    &-title {
+        color: vars.$preparation-color;
+        font-size: vars.$size-preparation;
+        font-weight: 700;
+        padding: 0.8rem 0 0.2rem 1.5rem;
+    }
+
+    &-list {
+        list-style: none;
+        padding: 0 1rem 1rem 1.88rem;
+
+        &-item {
+            position: relative;
+            padding: 0.2rem 2rem 0.3rem 2.1rem;
+
+            &::before {
+                content: "\2022";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.5rem;
+                line-height: 1;
+                color: vars.$list-marker-color;
+            }
+        }
+    }
+}
+
+.subtitle {
+    font-family: vars.$family-young-serif;
+    color: vars.$h2-color;
+    font-weight: 400;
+    font-size: vars.$size-h2;
+}
+
+.ingredients {
+    margin: 2.1rem 0 1.8rem 0;
+
+    &-list {
+        list-style: none;
+        padding: 0.6rem 0.4rem 1rem 0.4rem;
+        border-bottom: 1px solid vars.$color-light-gray;
+
+        &-item {
+            position: relative;
+            padding: 0.2rem 2rem 0.3rem;
+
+            &::before {
+                content: "\2022";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.5rem;
+                line-height: 1;
+                color: vars.$list-marker-color;
+            }
+        }
+    }
+}
+
+.instructions {
+    margin: 2.5rem 0 1.9rem 0;
+
+    &-list {
+        padding: 0.3rem 0 2rem 1.5rem;
+        border-bottom: 1px solid vars.$color-light-gray;
+
+        &-item {
+            padding: 0.5rem 0 0 1rem;   
+
+            &::marker {
+                color: vars.$h2-color;
+                font-weight: 600;
+                font-family: vars.$family-outfit;
+            }
+        }
+    }
+}
+
+.nutrition {
+    &-description {
+        padding: 0.75rem 0;
+        margin-bottom: 0.2rem;
+    }
+}
+
+.table {
+    line-height: 1.85rem;
+
+    tr:last-child td {
+        border-bottom: 0;
+    }
+
+    &-col {
+        &-name {
+            padding-left: 2.6rem !important;
+            flex-grow: 0.76;
+            color: vars.$main-color !important;
+        }
+
+        &-value {
+            color: vars.$h2-color !important;
+            font-weight: 600;
+        }
+    }
+}
+
+.footer {
+    background-color: vars.$main-bg-color;
+    color: vars.$main-color;
+    text-align: center;
+    font-size: vars.$size-p;
+    padding: 1rem;
+    width: 100%;
+
+    &-link:link,
+    &-link:visited {
+        text-decoration: none;
+        font-weight: 600;
+        color: vars.$color-dark-rasberry;
+    }
+
+    &-link:hover {
+        color: vars.$color-dark-charcoal;
+    }
+}
