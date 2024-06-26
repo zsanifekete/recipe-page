@@ -4,9 +4,10 @@
 
     .article {
         width: vars.$width-desktop !important;
-        margin-block: 3rem 0;
+        margin: auto 0;
         border-radius: 1.5rem;
         padding-bottom: 0.9rem;
+        justify-content: center;
     }
 
     .img-wrapper {
