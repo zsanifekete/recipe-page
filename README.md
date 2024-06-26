@@ -6,11 +6,11 @@
 
 <div align="center">
     <h3>
-        <a href="" target="_blank" title="Live Site">Live</a>
+        <a href="https://recipe-page-zsani.netlify.app/" target="_blank" title="Live Site">Live</a>
         <span> | </span>
-        <a href="" target="_blank" title="Solution">Solution</a>
+        <a href="https://www.frontendmentor.io/solutions/recipe-page-67AwmHEEqq" target="_blank" title="Solution">Solution</a>
         <span> | </span>
-        <a href="" target="_blank" title="Challenge">Challenge</a>
+        <a href="https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm" target="_blank" title="Challenge">Challenge</a>
     </h3>
 </div>
 
