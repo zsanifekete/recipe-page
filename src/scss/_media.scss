@@ -1,10 +1,10 @@
 @use 'variables' as vars;
 
-@media (min-width: 1000px) {
+@media (min-width: 750px) {
 
     .article {
         width: vars.$width-desktop !important;
-        margin: auto 0;
+        margin: 6rem 0 1rem 0;
         border-radius: 1.5rem;
         padding-bottom: 0.9rem;
         justify-content: center;
@@ -86,5 +86,18 @@
 
 .footer {
     background-color: vars.$body-bg-color !important;
+    margin-bottom: 2rem;
 }
+}
+
+@media (min-width: 400px) and (max-width: 550px) {
+    .article {
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: -4%;
+    }
 }
